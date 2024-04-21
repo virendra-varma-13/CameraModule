@@ -7,8 +7,12 @@ junitVersion = "1.1.5"
 espressoCore = "3.5.1"
 appcompat = "1.6.1"
 material = "1.11.0"
-activity = "1.8.0"
+activity = "1.9.0"
 constraintlayout = "2.1.4"
+camera = "1.3.3"
+navigationFragmentKtx = "2.7.7"
+navigationUiKtx = "2.7.7"
+exoplayer = "1.3.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -19,8 +23,17 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-camera-camera2 = {group = "androidx.camera", name = "camera-camera2", version.ref = "camera"}
+androidx-camera-lifecycle = {group = "androidx.camera", name = "camera-lifecycle", version.ref = "camera"}
+androidx-camera-view = {group = "androidx.camera", name = "camera-view", version.ref = "camera"}
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+#androidx-exoplayer = {group = "com.google.android.exoplayer", name = "exoplayer", version.ref = "exoplayer"}
+androidx-media3-exoplayer = {group = "androidx.media3", name = "media3-exoplayer", version.ref = "exoplayer"}
+androidx-media3-ui = {group = "androidx.media3", name = "media3-ui", version.ref = "exoplayer"}
+androidx-media3-dash = {group = "androidx.media3", name = "media3-dash", version.ref = "exoplayer"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
